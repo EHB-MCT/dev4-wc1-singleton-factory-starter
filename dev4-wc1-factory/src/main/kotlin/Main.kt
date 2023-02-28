@@ -4,19 +4,26 @@ fun main(args: Array<String>) {
     val kitchen = DarkKitchen()
 
     //Test statements
+
     /*
     kitchen.addItemToMenu("BURGER", "Cheeseburger", 6.99)
     kitchen.addItemToMenu("BURGER", "Fish burger", 8.99)
     kitchen.addItemToMenu("PIZZA", "Margherita", 9.99)
     println(kitchen.menu)
-    */
+     */
 
+    /*
+    for(item in kitchen.menu) {
+        print(item.name.toString());
+        println(item.price.toString())
+    }
+*/
     /*
     kitchen.addDiscountToAll(10)
     for(item in kitchen.menu) {
         println(item.price.toString())
     }
-    */
+     */
 }
 
 //Create the 'Meal' interface (type, name, price)
@@ -24,22 +31,6 @@ fun main(args: Array<String>) {
 //Create classes for every type of Meal that inherit from 'Meal'
 
 //Complete the DarkKitchen class
-class DarkKitchen {
-    //var menu = mutableListOf<Meal>()
 
-    fun addItemToMenu(type: String, name: String, price: Double) {
-
-    }
-
-    fun addDiscountToAll(percentage: Int) {
-        //...
-    }
-
-}
-
-class FoodFactory {
-    fun createItem(type: String, name: String, price: Double) {
-
-    }
-}
+//Create a FoodFactory class
 
